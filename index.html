@@ -67,7 +67,8 @@
       }
 
       .firstRow > span,
-      .secondRow > span {
+      .secondRow > span,
+      .thirdRow > span {
         background-color: rgb(247, 247, 249);
         border-left: 6px solid #5a8f29;
         border-top-left-radius: 5px;
@@ -80,18 +81,21 @@
       }
 
       .firstRow > span > h2,
-      .secondRow > span > h2 {
+      .secondRow > span > h2,
+      .thirdRow > span > h2 {
         font-size: 1rem;
       }
 
-      .secondRow {
+      .secondRow,
+      .thirdRow {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 5rem;
       }
 
-      .secondRow > span {
+      .secondRow > span,
+      .thirdRow > span {
         width: 15rem;
         line-height: 0.1px;
       }
@@ -120,11 +124,13 @@
         }
 
         .firstRow > span > h2,
-        .secondRow > span > h2 {
+        .secondRow > span > h2,
+        .thirdRow > span > h2 {
           font-size: 1.6rem;
         }
 
-        .secondRow > span {
+        .secondRow > span,
+        .thirdRow > span {
           width: 20rem;
           height: 5rem;
           line-height: 12px;
@@ -136,21 +142,29 @@
           width: 40rem;
         }
 
-        .secondRow {
+        .secondRow,
+        .thirdRow {
           gap: 7rem;
         }
 
-        .secondRow > span {
+        .secondRow > span,
+        .thirdRow > span {
           width: 30rem;
+        }
+
+        .secondRow > span > input {
+          width: 15rem;
         }
       }
 
       @media (max-width: 600px) {
-        .secondRow {
+        .secondRow,
+        .thirdRow {
           gap: 3rem;
         }
 
-        .secondRow > span {
+        .secondRow > span,
+        .thirdRow > span {
           width: 10rem;
         }
 
@@ -222,15 +236,33 @@
       </div>
       <div class="secondRow">
         <span>
-          <h2>Inserire cognome</h2>
-          <input type="text" name="cognome" id="" />
+          <h2>Cognome</h2>
+          <input
+            type="text"
+            name="cognome"
+            placeholder="Inserire cognome"
+            id=""
+          />
         </span>
         <span>
-          <h2>Inserire nome</h2>
-          <input type="text" name="nome" id="" />
+          <h2>Nome</h2>
+          <input type="text" name="nome" placeholder="Inserire nome" id="" />
         </span>
       </div>
-      <div class="thirdRow"></div>
+      <div class="thirdRow">
+        <span>
+          <h2>Data di nascita</h2>
+          <input type="date" name="dataDiNascita" id="" />
+        </span>
+        <span>
+          <h2>Sesso</h2>
+          <select name="sesso" id="">
+            <option value="m">Maschio</option>
+            <option value="f">Femmina</option>
+            <option value="boh">Non specificare</option>
+          </select>
+        </span>
+      </div>
       <div class="fourthRow"></div>
       <div class="fifthRow"></div>
     </form>
