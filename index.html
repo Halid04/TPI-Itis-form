@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .headerContainer {
+        background-image: url("header_bg.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: repeat-y;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 50vh;
+        width: 100vw;
+        box-shadow: -5px 2px 8px 0px #00000069;
+      }
+
+      .firstLogoContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 33vw;
+      }
+
+      .secondLogoContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 33vw;
+      }
+
+      .schoolName {
+        width: 33vw;
+        text-align: center;
+        font-size: 2rem;
+        color: #354e71;
+      }
+
+      .formInputs {
+        height: 50vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .firstRow,
+      .secondRow,
+      .thirdRow,
+      .fourthRow,
+      .fifthRow {
+        height: 16vh;
+        width: 100vw;
+        border: 1px solid red;
+      }
+
+      .firstRow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .firstRow > span {
+        background-color: rgb(247, 247, 249);
+        border-left: 6px solid #5a8f29;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        width: 20rem;
+        height: 3rem;
+        text-align: left;
+        line-height: 2px;
+      }
+
+      .firstRow > span > h2 {
+        font-size: 1rem;
+      }
+
+      @media (min-width: 768px) {
+        .headerContainer {
+          height: 20vh;
+          flex-direction: row;
+        }
+
+        .formInputs {
+          height: 80vh;
+        }
+
+        .firstRow > span {
+          width: 40rem;
+          height: 5rem;
+          line-height: 15px;
+        }
+
+        .firstRow > span > h2 {
+          font-size: 1.6rem;
+        }
+      }
+    </style>
+  </head>
+  <!--pagina generale-->
+  <body
+    style="
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0;
+    "
+  >
+    <!-- Header -->
+    <div class="headerContainer">
+      <div class="firstLogoContainer">
+        <img src="iislogo.gif" alt="" style="width: 5rem; aspect-ratio: 1/1" />
+      </div>
+      <div>
+        <h1 class="schoolName">I.I.S. Benedetto Castelli</h1>
+      </div>
+      <div class="secondLogoContainer">
+        <img
+          src="stemma-della-repubblica-italiana-colori.gif"
+          alt=""
+          style="width: 5rem; aspect-ratio: 1/1"
+        />
+      </div>
+    </div>
+
+    <!-- Form -->
+    <form action="" class="formInputs">
+      <div class="firstRow">
+        <span>
+          <h2>Selezionare dipartimento e corso</h2>
+          <select name="Dipartimenti e Corsi" id="">
+            <optgroup label="CHIMICA, MATERIALI E BIOTECNOLOGIE">
+              <option value="chimica">Chimica</option>
+              <option value="materialiEBiotecnologie">
+                Materiali e Biotecnologie
+              </option>
+            </optgroup>
+
+            <optgroup label="ELETTRONICA ED ELETTROTECNICA">
+              <option value="elettronica">Elettronica</option>
+              <option value="elettrotecnica">Elettrotecnica</option>
+            </optgroup>
+
+            <optgroup label="INFORMATICA E TELECOMUNICAZIONI">
+              <option value="informatica">Informatica</option>
+              <option value="telecomunicazioni">Telecomunicazioni</option>
+            </optgroup>
+
+            <optgroup label="MECCANICA, MECCATRONICA ED ENERGIA">
+              <option value="meccanica">Meccanica</option>
+              <option value="meccatronicaEdEnergia">
+                Meccatronica ed Energia
+              </option>
+            </optgroup>
+          </select>
+        </span>
+      </div>
+      <div class="secondRow"></div>
+      <div class="thirdRow"></div>
+      <div class="fourthRow"></div>
+      <div class="fifthRow"></div>
+    </form>
+  </body>
+</html>
