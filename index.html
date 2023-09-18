@@ -68,7 +68,8 @@
 
       .firstRow > span,
       .secondRow > span,
-      .thirdRow > span {
+      .thirdRow > span,
+      .fourthRow > span {
         background-color: rgb(247, 247, 249);
         border-left: 6px solid #5a8f29;
         border-top-left-radius: 5px;
@@ -82,12 +83,14 @@
 
       .firstRow > span > h2,
       .secondRow > span > h2,
-      .thirdRow > span > h2 {
+      .thirdRow > span > h2,
+      .fourthRow > span > h2 {
         font-size: 1rem;
       }
 
       .secondRow,
-      .thirdRow {
+      .thirdRow,
+      .fourthRow {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -95,7 +98,8 @@
       }
 
       .secondRow > span,
-      .thirdRow > span {
+      .thirdRow > span,
+      .fourthRow > span {
         width: 15rem;
         line-height: 0.1px;
       }
@@ -125,12 +129,14 @@
 
         .firstRow > span > h2,
         .secondRow > span > h2,
-        .thirdRow > span > h2 {
+        .thirdRow > span > h2,
+        .fourthRow > span > h2 {
           font-size: 1.6rem;
         }
 
         .secondRow > span,
-        .thirdRow > span {
+        .thirdRow > span,
+        .fourthRow > span {
           width: 20rem;
           height: 5rem;
           line-height: 12px;
@@ -143,12 +149,14 @@
         }
 
         .secondRow,
-        .thirdRow {
+        .thirdRow,
+        .fourthRow {
           gap: 7rem;
         }
 
         .secondRow > span,
-        .thirdRow > span {
+        .thirdRow > span,
+        .fourthRow > span {
           width: 30rem;
         }
 
@@ -164,7 +172,8 @@
         }
 
         .secondRow > span,
-        .thirdRow > span {
+        .thirdRow > span,
+        .fourthRow > span {
           width: 10rem;
         }
 
@@ -263,7 +272,40 @@
           </select>
         </span>
       </div>
-      <div class="fourthRow"></div>
+      <div class="fourthRow">
+        <span>
+          <h2>Classe attuale</h2>
+          <input type="number" name="classe" max="3" id="" />
+        </span>
+        <span>
+          <h2>Corso attuale</h2>
+          <select name="corso attuale" id="">
+            <optgroup label="CHIMICA, MATERIALI E BIOTECNOLOGIE">
+              <option value="chimica">Chimica</option>
+              <option value="materialiEBiotecnologie">
+                Materiali e Biotecnologie
+              </option>
+            </optgroup>
+
+            <optgroup label="ELETTRONICA ED ELETTROTECNICA">
+              <option value="elettronica">Elettronica</option>
+              <option value="elettrotecnica">Elettrotecnica</option>
+            </optgroup>
+
+            <optgroup label="INFORMATICA E TELECOMUNICAZIONI">
+              <option value="informatica">Informatica</option>
+              <option value="telecomunicazioni">Telecomunicazioni</option>
+            </optgroup>
+
+            <optgroup label="MECCANICA, MECCATRONICA ED ENERGIA">
+              <option value="meccanica">Meccanica</option>
+              <option value="meccatronicaEdEnergia">
+                Meccatronica ed Energia
+              </option>
+            </optgroup>
+          </select>
+        </span>
+      </div>
       <div class="fifthRow"></div>
     </form>
   </body>
