@@ -111,6 +111,27 @@
         border-bottom: 2px solid;
       }
 
+      .fifthRow {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      .fifthRow > input {
+        cursor: pointer;
+        margin-top: 30px;
+        width: 7rem;
+        height: 1.7rem;
+        background-color: white;
+        border: 2px solid #5a8f29;
+        border-radius: 0.5rem;
+        box-shadow: -1px 3px 7px 1px #0000007a;
+      }
+
+      .fifthRow > input:hover {
+        background-color: rgb(239, 238, 238);
+      }
+
       @media (min-width: 768px) {
         .headerContainer {
           height: 20vh;
@@ -141,6 +162,12 @@
           height: 5rem;
           line-height: 12px;
         }
+
+        .fifthRow > input {
+          width: 10rem;
+          height: 2rem;
+          font-size: 1rem;
+        }
       }
 
       @media (min-width: 1100px) {
@@ -162,6 +189,12 @@
 
         .secondRow > span > input {
           width: 15rem;
+        }
+
+        .fifthRow > input {
+          width: 10.5rem;
+          height: 2.5rem;
+          font-size: 1rem;
         }
       }
 
@@ -275,7 +308,7 @@
       <div class="fourthRow">
         <span>
           <h2>Classe attuale</h2>
-          <input type="number" name="classe" max="3" id="" />
+          <input type="number" name="classe" min="1" max="3" id="" />
         </span>
         <span>
           <h2>Corso attuale</h2>
@@ -306,7 +339,9 @@
           </select>
         </span>
       </div>
-      <div class="fifthRow"></div>
+      <div class="fifthRow">
+        <input type="submit" value="Invia" />
+      </div>
     </form>
   </body>
 </html>
